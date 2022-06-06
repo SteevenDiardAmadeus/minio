@@ -814,7 +814,7 @@ func getS3TTFBDistributionMD() MetricDescription {
 		Subsystem: timeSubsystem,
 		Name:      ttfbDistribution,
 		Help:      "Distribution of the time to first byte across API calls.",
-		Type:      gaugeMetric,
+		Type:      histogramMetric,
 	}
 }
 
